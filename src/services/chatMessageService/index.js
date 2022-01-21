@@ -14,7 +14,7 @@ const messages = [{
     
 }];
 
-export const ChatMessageService = {
+export const ChatMessageService = (messages = _messages) => ({
     async getMessages(){
         
         return messages;
@@ -38,4 +38,4 @@ export const ChatMessageService = {
         }
 
     }
-}
+})
